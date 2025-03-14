@@ -18,8 +18,8 @@ import {remarkHtml} from "./src/plugins/remark-html.js";
 
 
 export default defineConfig({
-  site: 'https://astro-yi-nu.vercel.app',
-  base: '/yi.github.io',
+  site: 'https://cirry.github.io/yi.github.io',
+  base: '',
   integrations: [sitemap(), tailwind(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     themes: ["github-dark", "github-light"],
