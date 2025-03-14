@@ -18,8 +18,8 @@ import {remarkHtml} from "./src/plugins/remark-html.js";
 
 
 export default defineConfig({
-  site: 'https://cirry.github.io/yi.github.io',
-  base: '',
+  site: 'https://cirry.github.io',
+  base: '/yi.github.io',
   integrations: [sitemap(), tailwind(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     themes: ["github-dark", "github-light"],
