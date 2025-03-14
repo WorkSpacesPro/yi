@@ -16,10 +16,13 @@ import {lazyLoadImage} from "./src/plugins/lazy-load-image.js";
 import {remarkButton} from "./src/plugins/remark-button.js";
 import {remarkHtml} from "./src/plugins/remark-html.js";
 
+const isProd = import.meta.env.PROD;
+// console.log(isProd, 'import.meta.env.DEV')
 
 export default defineConfig({
   site: 'https://cirry.github.io',
-  base: '/yi.github.io',
+  base: isProd ? '/yi.github.io' : '',
+  trailingSlash: "never",
   integrations: [sitemap(), tailwind(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     themes: ["github-dark", "github-light"],
