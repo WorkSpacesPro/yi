@@ -32,7 +32,7 @@ import getUrl from "../utils/getUrl";
     <!-- category -->
     {
       category && dealLabel(category).filter(item => item !== 'uncategorized').map((categoryName) =>
-        <a href={"/category/" + categoryName} class="text-wrap break-all hover:text-skin-active mr-2">
+        <a href={getUrl("/category/") + categoryName} class="text-wrap break-all hover:text-skin-active mr-2">
           <i class="ri-folder-3-line"/>
           {categoryName}
         </a>
@@ -42,7 +42,7 @@ import getUrl from "../utils/getUrl";
     <!-- tag -->
     {
       tags && dealLabel(tags).map((tagName) =>
-        <a href={"/tags/" + tagName} class="text-wrap break-all hover:text-skin-active mr-2">
+        <a href={getUrl("/tags/") + tagName} class="text-wrap break-all hover:text-skin-active mr-2">
           <i class="ri-hashtag"/>{tagName}</a>
       )
     }

@@ -14,3 +14,7 @@ category: Astro
 2. 选择使用github actions 来部署网站
 3. 添加/.github/workflows/astro.yml文件
 
+修改的地方：
+
+/src/consts.ts
+site.url 的值应该与astro.config.js的site的属性值一样。
