@@ -30,9 +30,9 @@ export const site = {
   url: 'https://cirry.github.io', // required
   motto: 'Actions speak louder than words.',
   recentBlogSize: 5,
-  archivePageSize: 25,
+  archivePageSize: 1,
   postPageSize: 10,
-  feedPageSize: 20,
+  feedPageSize: 1,
   beian: '',
   asideTagsMaxSize: 0,
 }
