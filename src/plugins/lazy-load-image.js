@@ -1,4 +1,5 @@
 import {visit} from "unist-util-visit";
+import getUrl from "../utils/getUrl.js";
 
 export function lazyLoadImage() {
   return function (tree) {
