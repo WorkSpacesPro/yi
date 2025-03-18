@@ -5,7 +5,7 @@ export function lazyLoadImage() {
     visit(tree, function (node) {
       if (node.tagName === 'img') {
         node.properties['data-src'] = node.properties.src
-        node.properties.src = '/spinner.gif'
+        node.properties.src = getUrl('/spinner.gif')
         node.properties['data-alt'] = node.properties.alt
         node.properties.alt = 'default'
       }
