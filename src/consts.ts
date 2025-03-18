@@ -28,7 +28,7 @@ export const site = {
   author: "Astro-Yi", // required
   avatar: '/avatar.png', // required
   url: 'https://cirry.github.io', // required
-  baseUrl: 'yi.github.io',
+  baseUrl: '/yi.github.io',
   motto: 'Actions speak louder than words.',
   recentBlogSize: 5,
   archivePageSize: 1,
