@@ -4,6 +4,9 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import remarkDirective from "remark-directive";
 import expressiveCode from "astro-expressive-code";
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
 import {pluginLineNumbers} from '@expressive-code/plugin-line-numbers'
 import {pluginCollapsibleSections} from '@expressive-code/plugin-collapsible-sections'
 
@@ -17,12 +20,9 @@ import {remarkButton} from "./src/plugins/remark-button.js";
 import {remarkHtml} from "./src/plugins/remark-html.js";
 
 import {site} from './src/consts.ts'
-
-console.log(site.baseUrl)
-console.log(import.meta.env.BASE_URL, 'astro.config.js')
 export default defineConfig({
   site: site.url,
-  base: site.baseUrl,
+  base: import.meta.env.PROD? site.baseUrl : '',
   trailingSlash: "never",
   integrations: [sitemap(), tailwind(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
@@ -34,7 +34,7 @@ export default defineConfig({
     themeCssSelector: (theme) => `[data-theme="${theme.type}"]`
   }), mdx()],
   markdown: {
-    remarkPlugins: [remarkModifiedTime, resetRemark, remarkDirective, remarkAsides({}), remarkCollapse({}), remarkGithubCard(), remarkButton(), remarkHtml()],
-    rehypePlugins: [lazyLoadImage],
+    remarkPlugins: [ remarkModifiedTime, resetRemark, remarkDirective, remarkAsides({}), remarkCollapse({}), remarkGithubCard(), remarkButton(), remarkHtml()],
+    rehypePlugins: [ lazyLoadImage],
   }
 });
