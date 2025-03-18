@@ -21,7 +21,7 @@ const isProd = import.meta.env.PROD;
 
 export default defineConfig({
   site: 'https://cirry.github.io',
-  base: isProd ? '/yi.github.io' : '',
+  base: isProd ? 'yi.github.io' : '',
   trailingSlash: "never",
   integrations: [sitemap(), tailwind(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
