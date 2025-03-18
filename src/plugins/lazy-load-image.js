@@ -1,6 +1,8 @@
 import {visit} from "unist-util-visit";
 import getUrl from "../utils/getUrl.js";
 
+console.log(import.meta.env.BASE_URL, 'import.meta.env.BASE_URL')
+
 export function lazyLoadImage() {
   return function (tree) {
     visit(tree, function (node) {

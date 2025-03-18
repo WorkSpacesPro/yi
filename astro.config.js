@@ -16,12 +16,13 @@ import {lazyLoadImage} from "./src/plugins/lazy-load-image.js";
 import {remarkButton} from "./src/plugins/remark-button.js";
 import {remarkHtml} from "./src/plugins/remark-html.js";
 
-const isProd = import.meta.env.PROD;
-// console.log(isProd, 'import.meta.env.DEV')
+import {site} from './src/consts.ts'
 
+console.log(site.baseUrl)
+console.log(import.meta.env.BASE_URL, 'astro.config.js')
 export default defineConfig({
-  site: 'https://cirry.github.io',
-  base: isProd ? 'yi.github.io' : '',
+  site: site.url,
+  base: '1232131',
   trailingSlash: "never",
   integrations: [sitemap(), tailwind(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
