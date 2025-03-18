@@ -22,7 +22,7 @@ console.log(site.baseUrl)
 console.log(import.meta.env.BASE_URL, 'astro.config.js')
 export default defineConfig({
   site: site.url,
-  base: '1232131',
+  base: site.baseUrl,
   trailingSlash: "never",
   integrations: [sitemap(), tailwind(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
