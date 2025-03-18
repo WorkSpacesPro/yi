@@ -1,5 +1,5 @@
 const isProd = import.meta.env.PROD;
-import {site} from 'src/consts'
+import {site} from '../consts'
 
 export default function getUrl(path: string) {
   if (path === '' || path === 'javascript:void(0);') {
