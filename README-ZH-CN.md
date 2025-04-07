@@ -4,7 +4,9 @@
 
 预览地址：[Astro-Theme-Yi](https://astro-yi-nu.vercel.app/)
 
-更多配置内容，请参阅文章： [Astro-YI Write Skill](https://cirry.cn/blog/frontend/astro/config-and-write-skill)
+更多配置内容，请参阅文章： [Astro-YI Write Skill](https://cirry.cn/blog/astro/config-and-write-skill)
+
+https://cirry.cn/blog/astro/config-and-write-skill/
 
 一款以内容为主的Astro博客主题————Yi，快速和简洁。
 
