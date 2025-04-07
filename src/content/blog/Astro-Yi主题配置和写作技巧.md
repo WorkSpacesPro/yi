@@ -1,6 +1,6 @@
 ---
 date: 2024-03-24
-title: mathjax
+title: Astro Theme Yi
 description: Astro-Yi
 mermaid: true
 mathjax: true
