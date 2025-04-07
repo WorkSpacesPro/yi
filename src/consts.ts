@@ -27,8 +27,8 @@ export const site = {
   description: 'Welcome to my independent blog website! ',
   author: "Astro-Yi", // required
   avatar: '/avatar.png', // required
-  url: 'https://cirry.github.io', // required
-  baseUrl: '/yi.github.io',
+  url: 'https://WorkSpacesPro.github.io', // required
+  baseUrl: '/yi',
   motto: 'Actions speak louder than words.',
   recentBlogSize: 5,
   archivePageSize: 1,
